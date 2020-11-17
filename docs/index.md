@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+# Assignment-6
 
-You can use the [editor on GitHub](https://github.com/rweston233/Assignment-6/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Assignment 6 Learning Objectives
+> Related Project and Lab Recap:
+> - Create two SQL views, and one stored procedure, using the Assignment 5 files for Assignment 6. Also update the NodeJS code to execute one of the views, and use the stored procedures. The specifics are as follows:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Part I
+> SQL Views
 
-### Markdown
+- Create two SQL views that work with the Assignment 5 alumni database. *Both views must start with the `vw_` prefix*.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  1. View #1: Create a simple view that returns data from one of the tables. Export the SQL to create this view to a file called `cit381-assign06-view1.sql`.
 
-```markdown
-Syntax highlighted code block
+  2. View #2: Create a view that returns data from two tables using a JOIN statement. Export the SQL to create this view to a file called `cit381-assign06-view2.sql`.
 
-# Header 1
-## Header 2
-### Header 3
+- Add a new GET route to the NodeJS code to use the second view (the view with the JOIN statement). Remember to ensure the new route is not the same as any other GET route.
 
-- Bulleted
-- List
+### Part II
+> Stored procedures
 
-1. Numbered
-2. List
+- Create a stored procedure that deletes a row from one of the tables. The stored procedure must take an appropriate primary key parameter to determine which row to delete. The stored procedure name must start with the `sp_` prefix.
+  - Export the SQL to create this stored procedure to a file called  `cit381-assign06-sp.sql`.
 
-**Bold** and _Italic_ and `Code` text
+- Add a new DELETE route to the NodeJS code to use the stored procedure to delete a row. Adjust the SQL to call the stored procedure, and supply the primary key as an argument to the stored procedure. Ensure the new route is not the same as any other DELETE route.
 
-[Link](url) and ![Image](src)
-```
+**Deliverables**
+[assign06.zip]()
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rweston233/Assignment-6/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+>> Back to home page:
+[Home](https://rweston233.github.io/)
